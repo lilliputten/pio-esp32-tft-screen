@@ -1,0 +1,21 @@
+{
+  "name": "pio-esp32-tft-screen",
+  "description": "ESP32 TFT Screen Test PlatformIO Project ",
+  "version": "0.0.1",
+  "timetag": "250515-2241",
+  "timestamp": "2025.05.15, 22:41 +0300",
+  "changed": "2025.05.18, 00:12",
+  "main": "index.html",
+  "author": "lilliputten@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lilliputten/pio-esp32-tft-screen.git"
+  },
+  "bugs": {
+    "url": "git@github.com:lilliputten/pio-esp32-tft-screen.git/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
