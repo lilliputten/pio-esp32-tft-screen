@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "timetag": "250515-2241",
   "timestamp": "2025.05.15, 22:41 +0300",
-  "changed": "2025.05.19, 20:39",
-  "main": "index.html",
+  "changed": "2025.05.19, 22:44",
+  "main": "src/main.cpp",
   "author": "lilliputten@gmail.com",
   "license": "MIT",
   "repository": {
