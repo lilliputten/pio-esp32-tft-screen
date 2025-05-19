@@ -9,5 +9,3 @@ int Module::test() {
   int result = subResult + 5;
   return result;
 };
-
-// Module module;

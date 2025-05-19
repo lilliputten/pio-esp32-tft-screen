@@ -24,9 +24,6 @@ void setup() {
   Serial.begin(115200);
   delay(100);
 
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
-
   initTFT();
 
   // Test module
@@ -154,5 +151,3 @@ void scanWifi() {
   // Delete the scan result to free memory for code below.
   WiFi.scanDelete();
 }
-
-int myFunction(int x, int y) { return x + y; }

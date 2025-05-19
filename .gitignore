@@ -14,3 +14,10 @@ zia*
 *.session
 *crashed-session*
 
+# PlatformIO
+.ccls-cache
+
+# NOTE: PlatformIO: Create/update the ccls configuration file by a command:
+# `pio init --ide vim`
+.ccls
+!.ccls.SAMPLE

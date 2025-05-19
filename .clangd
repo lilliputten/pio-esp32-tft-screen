@@ -1,0 +1,5 @@
+# https://clangd.llvm.org/config.html#files
+
+# CompileFlags:
+#   Add:
+#     - "-I[$HOME/.platformio/packages/framework-arduinoespressif32/cores/esp32/]"
