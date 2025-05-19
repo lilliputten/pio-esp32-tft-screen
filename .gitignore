@@ -21,3 +21,7 @@ zia*
 # `pio init --ide vim`
 .ccls
 !.ccls.SAMPLE
+
+# Overrides for PlatformIO settings
+platformio_override.ini
+!platformio_override.ini.SAMPLE

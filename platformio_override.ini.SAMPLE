@@ -1,0 +1,5 @@
+# Overrides for PlatformIO settings
+
+[env:esp32dev]
+upload_port = COM3
+monitor_port = COM3

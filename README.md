@@ -8,3 +8,4 @@
 ## Materials
 
 - [Installing on PlatformIO · Bodmer/TFT_eSPI Wiki](https://github.com/Bodmer/TFT_eSPI/wiki/Installing-on-PlatformIO)
+- [Compile on the command line with PlatformIO Core - OpenDTU Documentation](https://www.opendtu.solar/firmware/compile_cli/#other-popular-platformio-tasks)

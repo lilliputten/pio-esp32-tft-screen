@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "timetag": "250515-2241",
   "timestamp": "2025.05.15, 22:41 +0300",
-  "changed": "2025.05.18, 00:12",
+  "changed": "2025.05.19, 20:39",
   "main": "index.html",
   "author": "lilliputten@gmail.com",
   "license": "MIT",
@@ -16,6 +16,10 @@
     "url": "git@github.com:lilliputten/pio-esp32-tft-screen.git/issues"
   },
   "scripts": {
+    "build": "pio run -e esp32dev",
+    "upload": "pio run -e esp32dev -t upload",
+    "clean": "pio run -e esp32dev -t clean",
+    "monitor": "pio device monitor",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

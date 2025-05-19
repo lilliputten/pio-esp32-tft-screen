@@ -24,6 +24,14 @@ void setup() {
 
   initTFT();
 
+  // Test project parameters...
+  Serial.println("TFT_WIDTH: " + String(TFT_WIDTH));
+  Serial.println("TFT_HEIGHT: " + String(TFT_HEIGHT));
+
+  Serial.println("TFT_DC: " + String(TFT_DC));
+  Serial.println("TFT_RST: " + String(TFT_RST));
+  Serial.println("TFT_CS: " + String(TFT_CS));
+
   // Test module
   Serial.println("Module test...");
   // int testResult = moduleTest();
@@ -34,16 +42,6 @@ void setup() {
 }
 
 void loop() {
-  // Serial.println("ILI9341_DRIVER: " + String(ILI9341_DRIVER));
-  // Serial.println("ST7735_DRIVER: " + String(ST7735_DRIVER));
-
-  Serial.println("TFT_WIDTH: " + String(TFT_WIDTH));
-  Serial.println("TFT_HEIGHT: " + String(TFT_HEIGHT));
-
-  Serial.println("TFT_DC: " + String(TFT_DC));
-  Serial.println("TFT_RST: " + String(TFT_RST));
-  Serial.println("TFT_CS: " + String(TFT_CS));
-
   Serial.println("Black");
   tft.fillScreen(TFT_BLACK);
   delay(1000);
