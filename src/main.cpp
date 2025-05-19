@@ -2,8 +2,8 @@
 
 #include "WiFi.h"
 
-#include <TFT_eSPI.h> // Hardware-specific library, see configuration in `User_Setup.h`
 #include <SPI.h>
+#include <TFT_eSPI.h>  // Hardware-specific library, see configuration in `User_Setup.h`
 
 #include "Module.h"
 
@@ -16,12 +16,11 @@ void drawCircles1();
 void initWiFi();
 void scanWifi();
 
-TFT_eSPI tft = TFT_eSPI();       // Invoke custom library
+TFT_eSPI tft = TFT_eSPI();  // Invoke custom library
 
 int count = 0;
 
-void setup()
-{
+void setup() {
   Serial.begin(115200);
   delay(100);
 
@@ -39,8 +38,7 @@ void setup()
   Serial.println("Setup done");
 }
 
-void loop()
-{
+void loop() {
   // Serial.println("ILI9341_DRIVER: " + String(ILI9341_DRIVER));
   // Serial.println("ST7735_DRIVER: " + String(ST7735_DRIVER));
 
@@ -67,7 +65,8 @@ void loop()
 }
 
 void initWiFi() {
-  // Set WiFi to station mode and disconnect from an AP if it was previously connected.
+  // Set WiFi to station mode and disconnect from an AP if it was previously
+  // connected.
   WiFi.mode(WIFI_STA);
   WiFi.disconnect();
   delay(100);
@@ -83,10 +82,9 @@ void drawCircles1() {
   tft.fillScreen(TFT_BLACK);
 
   // Draw some random filled ellipses
-  for (int i = 0; i < 20; i++)
-  {
+  for (int i = 0; i < 20; i++) {
     int rx = random(40);
-    int ry = rx; // random(40);
+    int ry = rx;  // random(40);
     int x = rx + random(160 - rx - rx);
     int y = ry + random(128 - ry - ry);
     tft.fillEllipse(x, y, rx, ry, random(0xFFFF));
@@ -104,7 +102,8 @@ void scanWifi() {
   } else {
     Serial.print(n);
     Serial.println(" networks found");
-    Serial.println("Nr | SSID                             | RSSI | CH | Encryption");
+    Serial.println(
+        "Nr | SSID                             | RSSI | CH | Encryption");
     for (int i = 0; i < n; ++i) {
       // Print SSID and RSSI for each network found
       Serial.printf("%2d", i + 1);
@@ -116,16 +115,35 @@ void scanWifi() {
       Serial.printf("%2ld", WiFi.channel(i));
       Serial.print(" | ");
       switch (WiFi.encryptionType(i)) {
-        case WIFI_AUTH_OPEN:            Serial.print("open"); break;
-        case WIFI_AUTH_WEP:             Serial.print("WEP"); break;
-        case WIFI_AUTH_WPA_PSK:         Serial.print("WPA"); break;
-        case WIFI_AUTH_WPA2_PSK:        Serial.print("WPA2"); break;
-        case WIFI_AUTH_WPA_WPA2_PSK:    Serial.print("WPA+WPA2"); break;
-        case WIFI_AUTH_WPA2_ENTERPRISE: Serial.print("WPA2-EAP"); break;
-        case WIFI_AUTH_WPA3_PSK:        Serial.print("WPA3"); break;
-        case WIFI_AUTH_WPA2_WPA3_PSK:   Serial.print("WPA2+WPA3"); break;
-        case WIFI_AUTH_WAPI_PSK:        Serial.print("WAPI"); break;
-        default:                        Serial.print("unknown");
+        case WIFI_AUTH_OPEN:
+          Serial.print("open");
+          break;
+        case WIFI_AUTH_WEP:
+          Serial.print("WEP");
+          break;
+        case WIFI_AUTH_WPA_PSK:
+          Serial.print("WPA");
+          break;
+        case WIFI_AUTH_WPA2_PSK:
+          Serial.print("WPA2");
+          break;
+        case WIFI_AUTH_WPA_WPA2_PSK:
+          Serial.print("WPA+WPA2");
+          break;
+        case WIFI_AUTH_WPA2_ENTERPRISE:
+          Serial.print("WPA2-EAP");
+          break;
+        case WIFI_AUTH_WPA3_PSK:
+          Serial.print("WPA3");
+          break;
+        case WIFI_AUTH_WPA2_WPA3_PSK:
+          Serial.print("WPA2+WPA3");
+          break;
+        case WIFI_AUTH_WAPI_PSK:
+          Serial.print("WAPI");
+          break;
+        default:
+          Serial.print("unknown");
       }
       Serial.println();
       delay(10);
@@ -137,9 +155,4 @@ void scanWifi() {
   WiFi.scanDelete();
 }
 
-// put function definitions here:
-int myFunction(int x, int y)
-{
-  return x + y;
-}
-
+int myFunction(int x, int y) { return x + y; }
