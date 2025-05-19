@@ -5,12 +5,10 @@
 #include <SPI.h>
 #include <TFT_eSPI.h>  // Hardware-specific library, see configuration in `User_Setup.h`
 
-#include "Module.h"
+#include "Module.hpp"
 
 Module module;
 
-// put function declarations here:
-int myFunction(int, int);
 void initTFT();
 void drawCircles1();
 void initWiFi();
@@ -107,9 +105,9 @@ void scanWifi() {
       Serial.print(" | ");
       Serial.printf("%-32.32s", WiFi.SSID(i).c_str());
       Serial.print(" | ");
-      Serial.printf("%4ld", WiFi.RSSI(i));
+      Serial.printf("%4ld", (long) WiFi.RSSI(i));
       Serial.print(" | ");
-      Serial.printf("%2ld", WiFi.channel(i));
+      Serial.printf("%2ld", (long) WiFi.channel(i));
       Serial.print(" | ");
       switch (WiFi.encryptionType(i)) {
         case WIFI_AUTH_OPEN:
