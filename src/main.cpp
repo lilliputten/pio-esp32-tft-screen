@@ -19,6 +19,8 @@ void setup() {
   // wiFiUtils.initWiFi();
   // wiFiUtils.scanWifi();
 
+  demos.demoTempSensorInit();
+
   Serial.println("Setup done");
 }
 
@@ -26,9 +28,11 @@ void loop() {
   count++;
   Serial.println("Loop count: " + String(count));
 
-  // demos.demoPrint(tftUtils.tft);
-  demos.demoFont(tftUtils.tft);
+  demos.demoTempSensorShow(tftUtils.tft);
+
+  // // demos.demoPrint(tftUtils.tft);
+  // demos.demoFont(tftUtils.tft);
 
   // while(1) yield(); // We must yield() to stop a watchdog timeout.
-  delay(1000);
+  delay(5000);
 }

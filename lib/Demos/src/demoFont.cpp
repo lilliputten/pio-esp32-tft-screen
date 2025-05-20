@@ -31,8 +31,8 @@ void Demos::demoFont(TFT_eSPI &tft) {
   tft.fillScreen(TFT_BLACK);
   tft.setTextColor(TFT_GREEN, TFT_BLACK);
 
-  tft.drawString(" !\"#$%&'()*+,-./0123456", 0, 0, 1);
-  tft.drawString("789:;<=>?@ABCDEFGHIJKL", 0, 12, 1);
+  tft.drawString(" !\"#$%&'()*+,-./0123456", 0, 0, 2);
+  tft.drawString("789:;<=>?@ABCDEFGHIJKL", 0, 12, 2);
   tft.drawString("MNOPQRSTUVWXYZ[\\]^_`", 0, 32, 2);
   tft.drawString("abcdefghijklmnopqrstuvw", 0, 48, 2);
   int xpos = 0;
