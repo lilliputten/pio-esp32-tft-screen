@@ -3,8 +3,8 @@
 // #include "WiFiUtils.hpp"
 
 TFTUtils tftUtils;
-// WiFiUtils wiFiUtils;
 Demos demos;
+// WiFiUtils wiFiUtils;
 
 // Iteration count
 long count = 0;
