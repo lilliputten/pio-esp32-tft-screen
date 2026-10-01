@@ -25,3 +25,6 @@ zia*
 # Overrides for PlatformIO settings
 platformio_override.ini
 !platformio_override.ini.SAMPLE
+
+# Misc
+.kilo

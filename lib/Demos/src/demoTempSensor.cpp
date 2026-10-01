@@ -53,7 +53,8 @@ void Demos::demoTempSensorShow(TFT_eSPI &tft) {
   tft.print(_count);
   tft.print(" / ");
   tft.print(rand);
-  tft.println("  -");
+  // Place extra spaces to cleanup the previous output text
+  tft.println("   ");
 
   tft.setCursor(xp, yp2, font2);
 
