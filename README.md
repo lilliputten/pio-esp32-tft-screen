@@ -1,11 +1,24 @@
 <!--
  @since 2025.05.18, 00:11
- @changed 2025.05.18, 00:11
+ @changed 2026.10.01, 21:35
 -->
 
 # ESP32 TFT Screen Test PlatformIO Project
 
-## Materials
+## ℹ️ Build info (auto-generated)
+
+- Project info: v.0.0.0 / 2026.10.01 21:39:20 +0300
+
+## 🔗 Resources
+
+- [Github repo](https://github.com/lilliputten/pio-esp32-tft-screen)
+
+## 🔗 Materials
 
 - [Installing on PlatformIO · Bodmer/TFT_eSPI Wiki](https://github.com/Bodmer/TFT_eSPI/wiki/Installing-on-PlatformIO)
 - [Compile on the command line with PlatformIO Core - OpenDTU Documentation](https://www.opendtu.solar/firmware/compile_cli/#other-popular-platformio-tasks)
+
+## 📝 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+

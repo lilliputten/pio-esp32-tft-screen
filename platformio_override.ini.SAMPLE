@@ -3,3 +3,9 @@
 [env:esp32dev]
 upload_port = COM3
 monitor_port = COM3
+build_flags =
+  ${tft_settings.build_flags}
+  ; Actual TFT PINOUT
+  -D TFT_DC=2 ; Data Command control pin
+  -D TFT_RST=14 ; Reset pin (could connect to RST pin)
+  -D TFT_CS=17 ; Chip select control pin
